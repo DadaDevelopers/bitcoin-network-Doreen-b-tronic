@@ -1,0 +1,27 @@
+#!/bin/bash
+
+NODE_DIR=$HOME/bitcoin-node1
+RPC_PORT=18450
+WALLET_NAME="wallet1"
+
+# Start node with blockfilterindex
+bitcoind -regtest -datadir=$NODE_DIR -daemon -blockfilterindex=1 -rpcport=$RPC_PORT
+
+# Wait for node to start
+sleep 5
+
+# Create wallet if not exists
+bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT listwallets | grep -q "$WALLET_NAME" || \
+    bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT createwallet "$WALLET_NAME"
+
+# Generate a block
+ADDRESS=$(bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT -rpcwallet=$WALLET_NAME getnewaddress)
+bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT -rpcwallet=$WALLET_NAME generatetoaddress 1 $ADDRESS
+
+# Query the block filter
+BLOCK_HASH=$(bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT getblockhash 1)
+FILTER=$(bitcoin-cli -regtest -datadir=$NODE_DIR -rpcport=$RPC_PORT getblockfilter $BLOCK_HASH)
+
+echo "Block filter for block $BLOCK_HASH:"
+echo "$FILTER"
+

@@ -1,0 +1,13 @@
+Lab 4 — Compact Block Relay (BIP152) — Two Node Demo
+Debug logs:
+Node1: /home/d_re/bitcoin-node1/regtest/debug.log
+Node2: /home/d_re/bitcoin-node2/regtest/debug.log
+
+Mined 1 block on Node1 to address bcrt1q2dqy09txxu6hvv86mpf7p0sdjlfd7lmtu43a6v
+Waiting 5 seconds for Node2 to receive compact block...
+
+Node1 compact block messages:
+
+Node2 compact block messages:
+
+Lab 4 complete. Output saved to ./Lab4_Outputs.txt

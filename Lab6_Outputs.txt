@@ -1,0 +1,32 @@
+Lab 6 — Merkle Tree Exploration
+---------------------------------
+Latest block hash: 1d286b39d5acc9a7d46ce8ebdc791bc15e86bc86801e3660dd8dafb8ebf94243
+Fetching block details...
+{
+  "hash": "1d286b39d5acc9a7d46ce8ebdc791bc15e86bc86801e3660dd8dafb8ebf94243",
+  "confirmations": 1,
+  "height": 5,
+  "version": 536870912,
+  "versionHex": "20000000",
+  "merkleroot": "2615ae8dab8b264ec4145d28ef5f2eca5505a3c55b05434bbfff512a55363271",
+  "time": 1761782975,
+  "mediantime": 1761782633,
+  "nonce": 0,
+  "bits": "207fffff",
+  "target": "7fffff0000000000000000000000000000000000000000000000000000000000",
+  "difficulty": 4.656542373906925e-10,
+  "chainwork": "000000000000000000000000000000000000000000000000000000000000000c",
+  "nTx": 1,
+  "previousblockhash": "7322d9ef91f9556043293c185a4dc926d3f3861df42baf6902941f04145689a7",
+  "strippedsize": 212,
+  "size": 248,
+  "weight": 884,
+  "tx": [
+    "2615ae8dab8b264ec4145d28ef5f2eca5505a3c55b05434bbfff512a55363271"
+  ]
+}
+Block merkleroot: 2615ae8dab8b264ec4145d28ef5f2eca5505a3c55b05434bbfff512a55363271
+Transactions in block:
+2615ae8dab8b264ec4145d28ef5f2eca5505a3c55b05434bbfff512a55363271
+Verifying Merkle root manually with Python...
+Lab 6 complete. Output saved to ./Lab6_Outputs.txt

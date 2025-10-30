@@ -1,0 +1,168 @@
+
+Stopping any running bitcoind instances...
+Cleaning previous regtest data...
+Starting Node 1...
+Starting Node 2...
+Checking running nodes...
+d_re       35448  1.6  1.2 1310176 49044 ?       Ssl  02:33   0:00 bitcoind -regtest -datadir=/home/d_re/bitcoin-node1 -port=18444 -rpcport=18450 -daemon
+d_re       35486  3.3  1.2 1310176 49068 ?       Ssl  02:33   0:00 bitcoind -regtest -datadir=/home/d_re/bitcoin-node2 -port=18446 -rpcport=18451 -daemon
+Node1 cookie:
+/home/d_re/bitcoin-node1/regtest/.cookie
+Node2 cookie:
+/home/d_re/bitcoin-node2/regtest/.cookie
+Connecting Node2 to Node1...
+
+Node1 peer info:
+[
+  {
+    "id": 0,
+    "addr": "127.0.0.1:50800",
+    "addrbind": "127.0.0.1:18444",
+    "network": "not_publicly_routable",
+    "services": "0000000000000c09",
+    "servicesnames": [
+      "NETWORK",
+      "WITNESS",
+      "NETWORK_LIMITED",
+      "P2P_V2"
+    ],
+    "relaytxes": true,
+    "last_inv_sequence": 1,
+    "inv_to_send": 0,
+    "lastsend": 1761780803,
+    "lastrecv": 1761780803,
+    "last_transaction": 0,
+    "last_block": 0,
+    "bytessent": 3110,
+    "bytesrecv": 4267,
+    "conntime": 1761780803,
+    "timeoffset": 0,
+    "pingtime": 0.000407,
+    "minping": 0.000407,
+    "version": 70016,
+    "subver": "/Satoshi:30.99.0/",
+    "inbound": true,
+    "bip152_hb_to": false,
+    "bip152_hb_from": false,
+    "startingheight": 0,
+    "presynced_headers": -1,
+    "synced_headers": -1,
+    "synced_blocks": -1,
+    "inflight": [
+    ],
+    "addr_relay_enabled": true,
+    "addr_processed": 0,
+    "addr_rate_limited": 0,
+    "permissions": [
+    ],
+    "minfeefilter": 0.09936506,
+    "bytessent_per_msg": {
+      "feefilter": 29,
+      "getheaders": 90,
+      "headers": 22,
+      "ping": 29,
+      "pong": 29,
+      "sendaddrv2": 33,
+      "sendcmpct": 30,
+      "verack": 33,
+      "version": 136,
+      "wtxidrelay": 33
+    },
+    "bytesrecv_per_msg": {
+      "feefilter": 29,
+      "getaddr": 33,
+      "getheaders": 90,
+      "headers": 22,
+      "ping": 29,
+      "pong": 29,
+      "sendaddrv2": 33,
+      "sendcmpct": 30,
+      "verack": 33,
+      "version": 136,
+      "wtxidrelay": 33
+    },
+    "connection_type": "inbound",
+    "transport_protocol_type": "v2",
+    "session_id": "47ba47c7720087afc06afe5e05ef6a214a3210d3e0154fb988daac1f7f638469"
+  }
+]
+
+Node2 peer info:
+[
+  {
+    "id": 0,
+    "addr": "127.0.0.1:18444",
+    "addrbind": "127.0.0.1:50800",
+    "network": "not_publicly_routable",
+    "services": "0000000000000c09",
+    "servicesnames": [
+      "NETWORK",
+      "WITNESS",
+      "NETWORK_LIMITED",
+      "P2P_V2"
+    ],
+    "relaytxes": true,
+    "last_inv_sequence": 1,
+    "inv_to_send": 0,
+    "lastsend": 1761780803,
+    "lastrecv": 1761780803,
+    "last_transaction": 0,
+    "last_block": 0,
+    "bytessent": 4267,
+    "bytesrecv": 3110,
+    "conntime": 1761780803,
+    "timeoffset": 0,
+    "pingtime": 0.0002,
+    "minping": 0.0002,
+    "version": 70016,
+    "subver": "/Satoshi:30.99.0/",
+    "inbound": false,
+    "bip152_hb_to": false,
+    "bip152_hb_from": false,
+    "startingheight": 0,
+    "presynced_headers": -1,
+    "synced_headers": -1,
+    "synced_blocks": -1,
+    "inflight": [
+    ],
+    "addr_relay_enabled": true,
+    "addr_processed": 0,
+    "addr_rate_limited": 0,
+    "permissions": [
+    ],
+    "minfeefilter": 0.09936506,
+    "bytessent_per_msg": {
+      "feefilter": 29,
+      "getaddr": 33,
+      "getheaders": 90,
+      "headers": 22,
+      "ping": 29,
+      "pong": 29,
+      "sendaddrv2": 33,
+      "sendcmpct": 30,
+      "verack": 33,
+      "version": 136,
+      "wtxidrelay": 33
+    },
+    "bytesrecv_per_msg": {
+      "feefilter": 29,
+      "getheaders": 90,
+      "headers": 22,
+      "ping": 29,
+      "pong": 29,
+      "sendaddrv2": 33,
+      "sendcmpct": 30,
+      "verack": 33,
+      "version": 136,
+      "wtxidrelay": 33
+    },
+    "connection_type": "manual",
+    "transport_protocol_type": "v2",
+    "session_id": "47ba47c7720087afc06afe5e05ef6a214a3210d3e0154fb988daac1f7f638469"
+  }
+]
+
+Two-node regtest network is ready!
+Node1 P2P: 18444, RPC: 18450
+Node2 P2P: 18446, RPC: 18451
+Lab2 network outputs saved to ./Lab2_Outputs.txt

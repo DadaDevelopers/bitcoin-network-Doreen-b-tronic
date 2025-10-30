@@ -1,0 +1,12 @@
+Lab 5 — Compact Block Filters (BIP157/158) — Two Node Demo
+--------------------------------------------
+Starting Node1 with blockfilterindex...
+Wallet wallet1 already exists.
+Mining 1 block to address bcrt1qxwc5hq3j5hw4khv0q8e6r3z85323y0j8nvw93v...
+[
+  "1d286b39d5acc9a7d46ce8ebdc791bc15e86bc86801e3660dd8dafb8ebf94243"
+]
+Fetching block filter for block 1d286b39d5acc9a7d46ce8ebdc791bc15e86bc86801e3660dd8dafb8ebf94243...
+
+Simulated decode (filter data in hex):
+Lab 5 complete. Output saved to ./Lab5_Outputs.txt
