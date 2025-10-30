@@ -1,0 +1,24 @@
+
+Lab 3 — Transaction Propagation and Mempool
+Sent 5 BTC to . TXID: 
+Mempool info:
+{
+  "loaded": true,
+  "size": 0,
+  "bytes": 0,
+  "usage": 0,
+  "total_fee": 0.00000000,
+  "maxmempool": 300000000,
+  "mempoolminfee": 0.00000100,
+  "minrelaytxfee": 0.00000100,
+  "incrementalrelayfee": 0.00000100,
+  "unbroadcastcount": 0,
+  "fullrbf": true,
+  "permitbaremultisig": true,
+  "maxdatacarriersize": 100000
+}
+Transactions in mempool:
+[]
+Mined 1 block to confirm transaction.
+Transaction details:
+Lab 3 complete. Output saved to ./Lab3_Outputs.txt

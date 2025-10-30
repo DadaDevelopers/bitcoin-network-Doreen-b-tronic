@@ -1,0 +1,9 @@
+Lab 8 — Observing Consensus Rules — Demo
+----------------------------------------
+Block copied. You can manually edit a byte in ~/tmp/blk00000.dat to simulate corruption.
+Bitcoin Core starting
+Bitcoin Core starting. Node restarted.
+Checking for rejected blocks in debug log...
+2025-10-24T17:48:54Z Loading addresses from DNS seed dummySeed.invalid.
+2025-10-29T22:12:22Z Loading addresses from DNS seed dummySeed.invalid.
+Lab 8 demo complete.
